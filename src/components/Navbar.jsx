@@ -41,7 +41,7 @@ const Navbar = () => {
                 )}
               </div>
               <ul
-                className={`desktop:flex desktop:gap-x-7 mobile:absolute tablet:absolute tablet:px-4 mobile:px-4 tablet:py-4 mobile:py-4 tablet:mt-8 mobile:mt-8 tablet:right-0 mobile:right-0 tablet:transition-all mobile:transition-all tablet:ease-in-out mobile:ease-in-out tablet:duration-200 mobile:duration-200 tablet:bg-accent2 mobile:bg-accent2 tablet:w-[20%] mobile:space-y-6 tablet:space-y-3 mobile:w-[50%] tablet:h-screen mobile:h-screen ${
+                className={`desktop:flex desktop:gap-x-7 mobile:absolute tablet:absolute tablet:px-8 mobile:px-4 tablet:py-2 mobile:py-4 tablet:mt-8 mobile:mt-8 tablet:right-0 mobile:right-0 tablet:transition-all mobile:transition-all tablet:ease-in-out mobile:ease-in-out tablet:duration-200 mobile:duration-200 tablet:bg-accent2 mobile:bg-accent2 tablet:w-[20%] mobile:space-y-6 tablet:space-y-3 mobile:w-[50%] tablet:h-screen mobile:h-screen ${
                   menu
                     ? 'mobile:right-0 tablet:right-0'
                     : 'mobile:right-[-1000px] tablet:right-[-1000px]'
