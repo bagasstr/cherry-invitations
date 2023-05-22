@@ -8,10 +8,12 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        /* Vertikal */
         mobile: { min: '300px', max: '767px' },
-        //   mobile: '300px',
         tablet: { min: '768px', max: '1023px' },
         desktop: '1024px',
+
+        /* Horizontal */
       },
 
       colors: {
