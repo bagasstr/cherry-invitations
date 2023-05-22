@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <header className='fixed w-full'>
-        <div className='max-w-5xl mx-auto py-4 px-4'>
+        <div className='max-w-5xl mx-auto mobile:py-2 tablet:py-2 py-4 px-4'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center'>
               <Image
@@ -19,11 +19,11 @@ const Navbar = () => {
                 priority={logo}
                 height={0}
                 alt='logo'
-                className='w-14 mr-2'
+                className='w-14 mobile:w-12 tablet:w-12 mr-2'
               />
-              <h1 className='text-xl text-text leading-5 desktop:font-normal font-semibold'>
+              <h1 className='desktop:text-xl mobile:text-lg mobile:font-medium tablet:font-medium text-text mobile:leading-4 desktop:leading-3 desktop:font-semibold'>
                 CHERRY
-                <span className='text-light text-accent'>
+                <span className='font-light text-accent'>
                   <br />
                   invitation
                 </span>
@@ -34,19 +34,40 @@ const Navbar = () => {
                 className='desktop:hidden'
                 onClick={() => setMenu((prv) => !prv)}
               >
-                {menu ? (
-                  <TbX className='text-2xl' />
-                ) : (
-                  <TbMenu className='text-2xl' />
-                )}
+                {menu ? null : <TbMenu className='text-2xl' />}
               </div>
               <ul
-                className={`desktop:flex desktop:gap-x-7 mobile:absolute tablet:absolute tablet:px-8 mobile:px-4 tablet:py-2 mobile:py-4 tablet:mt-8 mobile:mt-8 tablet:right-0 mobile:right-0 tablet:transition-all mobile:transition-all tablet:ease-in-out mobile:ease-in-out tablet:duration-200 mobile:duration-200 tablet:bg-accent2 mobile:bg-accent2 tablet:w-[20%] mobile:space-y-6 tablet:space-y-3 mobile:w-[50%] tablet:h-screen mobile:h-screen ${
+                className={`desktop:flex desktop:gap-x-7 mobile:absolute tablet:absolute tablet:px-4 mobile:px-4 tablet:py-2 mobile:py-2 tablet:top-0 mobile:top-0 tablet:right-0 mobile:right-0 tablet:transition-all mobile:transition-all tablet:ease-in-out mobile:ease-in-out tablet:duration-200 mobile:duration-200 tablet:bg-accent2 mobile:bg-accent2 tablet:w-full mobile:space-y-6 tablet:space-y-3 mobile:w-full tablet:h-screen mobile:h-screen ${
                   menu
                     ? 'mobile:right-0 tablet:right-0'
                     : 'mobile:right-[-1000px] tablet:right-[-1000px]'
                 }`}
               >
+                <div className='flex justify-between items-center tablet:mb-8 desktop:hidden'>
+                  <div className='flex items-center'>
+                    <Image
+                      src={logo}
+                      width={0}
+                      priority={logo}
+                      height={0}
+                      alt='logo'
+                      className='w-14 mobile:w-12 tablet:w-12 mr-2'
+                    />
+                    <h1 className='desktop:text-xl mobile:text-lg mobile:font-medium tablet:font-medium text-text mobile:leading-4 desktop:leading-3 desktop:font-semibold'>
+                      CHERRY
+                      <span className='font-light text-accent'>
+                        <br />
+                        invitation
+                      </span>
+                    </h1>
+                  </div>
+                  <div
+                    className='text-right flex justify-end'
+                    onClick={() => setMenu((prv) => !prv)}
+                  >
+                    {menu ? <TbX className='text-2xl' /> : null}
+                  </div>
+                </div>
                 <li className='text-text hover:text-accent font-light text-2xl'>
                   <Link href={'/home'}>Home</Link>
                 </li>
