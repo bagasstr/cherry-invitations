@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  backgoround-color: #f6f1f1;
+* {
+  scroll-behavior: smooth;
 }

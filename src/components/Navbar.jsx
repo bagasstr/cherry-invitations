@@ -3,10 +3,11 @@ import Image from 'next/image'
 import logo from '../assets/logo.png'
 import React, { useState } from 'react'
 import { TbMenu, TbX } from 'react-icons/tb'
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
+
   return (
     <>
       <header className='fixed w-full'>
@@ -19,9 +20,9 @@ const Navbar = () => {
                 priority={logo}
                 height={0}
                 alt='logo'
-                className='w-14 mobile:w-12 tablet:w-12 mr-2'
+                className='w-14 mobile:w-12 tablet:w-12 mr-4'
               />
-              <h1 className='desktop:text-xl mobile:text-lg mobile:font-medium tablet:font-medium text-text mobile:leading-4 desktop:leading-3 desktop:font-semibold'>
+              <h1 className='desktop:text-xl mobile:text-lg mobile:font-medium tablet:font-medium text-text mobile:leading-4 desktop:leading-5 desktop:font-semibold'>
                 CHERRY
                 <span className='font-light text-accent'>
                   <br />
@@ -68,19 +69,35 @@ const Navbar = () => {
                     {menu ? <TbX className='text-2xl' /> : null}
                   </div>
                 </div>
-                <li className='text-text hover:text-accent font-light text-2xl'>
-                  <Link href={'/home'}>Home</Link>
+                <li className='text-text cursor-pointer hover:text-accent font-light text-2xl'>
+                  <Link
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    Home
+                  </Link>
                 </li>
-                <li className='text-text hover:text-accent font-light text-2xl'>
-                  <Link href={'/fitur'}>Fitur</Link>
+                <li className='text-text cursor-pointer hover:text-accent font-light text-2xl'>
+                  <Link
+                    to='fitur'
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    Fitur
+                  </Link>
                 </li>
-                <li className='text-text hover:text-accent font-light text-2xl'>
+                <li className='text-text cursor-pointer hover:text-accent font-light text-2xl'>
                   <Link href={'/katalog'}>Katalog</Link>
                 </li>
-                <li className='text-text hover:text-accent font-light text-2xl'>
+                <li className='text-text cursor-pointer hover:text-accent font-light text-2xl'>
                   <Link href={'/harga'}>Harga</Link>
                 </li>
-                <li className='text-text hover:text-accent font-light text-2xl'>
+                <li className='text-text cursor-pointer hover:text-accent font-light text-2xl'>
                   <Link href={'/faq'}>Faq</Link>
                 </li>
               </ul>
