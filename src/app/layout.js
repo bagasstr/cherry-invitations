@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
       <body className={ws.className}>
-        {/* <Navbar /> */}
+        <Navbar />
         <main>{children}</main>
       </body>
     </html>

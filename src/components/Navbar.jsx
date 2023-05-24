@@ -22,10 +22,10 @@ const Navbar = () => {
               className='w-14 mobile:w-12 tablet:w-12 mr-4'
             />
             <h1 className='desktop:text-xl mobile:text-lg mobile:font-medium tablet:font-medium text-text mobile:leading-4 desktop:leading-5 desktop:font-semibold'>
-              CHERRY
+              CITRA
               <span className='font-light text-accent'>
                 <br />
-                invitation
+                invitations
               </span>
             </h1>
           </div>

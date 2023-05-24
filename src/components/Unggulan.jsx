@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import md from '../assets/mudah-digunakan.png'
 
-const Fitur = () => {
+const Unggulan = () => {
   return (
     <section id='fitur'>
       <div className='w-full mobile:py-28 desktop:py-36'>
@@ -82,4 +82,4 @@ const Fitur = () => {
   )
 }
 
-export default Fitur
+export default Unggulan
