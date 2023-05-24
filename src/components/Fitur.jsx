@@ -8,13 +8,13 @@ const Fitur = () => {
     <section id='fitur'>
       <div className='w-full mobile:py-28 desktop:py-36'>
         <div className='max-w-5xl mx-auto desktop:px-2'>
-          <div className='mobile:text-center'>
+          <div className='mobile:text-center mobile:px-6'>
             <div className='mb-4'>
               <h1 className='font-bold text-3xl desktop:text-4xl text-text'>
                 Keunggulan Undangan Digital
               </h1>
             </div>
-            <div className='mt-12 desktop:mt-16 desktop:flex desktop:justify-between desktop:items-center desktop:max-w-3xl desktop:mx-auto'>
+            <div className='mobile:mt-12 desktop:mt-20 desktop:flex desktop:justify-between desktop:items-center desktop:max-w-3xl desktop:mx-auto'>
               <div className='mobile:flex mobile:justify-center'>
                 <Image
                   src={md}
@@ -30,11 +30,11 @@ const Fitur = () => {
                 </h1>
                 <p className='text-sm desktop:text-lg mobile:leading-4'>
                   Hanya dengan link, undangan digital bisa dibagikan keseluruh
-                  tamu lengkap dengan nama tamu undangan
+                  tamu kamu lengkap dengan nama tamu undangan
                 </p>
               </div>
             </div>
-            <div className='mt-12 desktop:mt-16 desktop:flex desktop:flex-row-reverse desktop:justify-between desktop:items-center desktop:max-w-3xl desktop:mx-auto'>
+            <div className='mobile:mt-12 desktop:mt-20 desktop:flex desktop:flex-row-reverse desktop:justify-between desktop:items-center desktop:max-w-3xl desktop:mx-auto'>
               <div className='mobile:flex mobile:justify-center'>
                 <Image
                   src={md}
@@ -46,15 +46,16 @@ const Fitur = () => {
               </div>
               <div className='desktop:mr-24'>
                 <h1 className='text-2xl desktop:text-3xl font-semibold desktop:font-bold mb-2 text-text'>
-                  Mudah Digunakan
+                  Fitur Lengkap
                 </h1>
                 <p className='text-sm desktop:text-lg mobile:leading-4'>
-                  Hanya dengan link, undangan digital bisa dibagikan keseluruh
-                  tamu lengkap dengan nama tamu undangan
+                  Semua informasi ditampilkan dalam undangan dengan fitur peta
+                  lokasi, galeri pre wedding, countdown timer, hingga cerita
+                  cinta kamu
                 </p>
               </div>
             </div>
-            <div className='mt-12 desktop:mt-16 desktop:flex desktop:justify-between desktop:items-center desktop:max-w-3xl desktop:mx-auto'>
+            <div className='mobile:mt-12 desktop:mt-20 desktop:flex desktop:justify-between desktop:items-center desktop:max-w-3xl desktop:mx-auto'>
               <div className='mobile:flex mobile:justify-center'>
                 <Image
                   src={md}
@@ -66,11 +67,11 @@ const Fitur = () => {
               </div>
               <div className='desktop:ml-24'>
                 <h1 className='text-2xl desktop:text-3xl font-semibold desktop:font-bold mb-2 text-text'>
-                  Mudah Digunakan
+                  Modern & Kekinian
                 </h1>
                 <p className='text-sm desktop:text-lg mobile:leading-4'>
-                  Hanya dengan link, undangan digital bisa dibagikan keseluruh
-                  tamu lengkap dengan nama tamu undangan
+                  di era serba digital ini dengan menggunakan undangan digital,
+                  Hari sepesial kamu menjadi modern dan kekinian.
                 </p>
               </div>
             </div>

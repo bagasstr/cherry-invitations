@@ -74,7 +74,7 @@ const Navbar = () => {
                   to='home'
                   spy={true}
                   smooth={true}
-                  duration={500}
+                  duration={200}
                   onClick={() => setMenu((prv) => !prv)}
                 >
                   Home
@@ -85,7 +85,7 @@ const Navbar = () => {
                   to='fitur'
                   spy={true}
                   smooth={true}
-                  duration={500}
+                  duration={200}
                   onClick={() => setMenu((prv) => !prv)}
                 >
                   Fitur
