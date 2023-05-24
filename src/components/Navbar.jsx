@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className='fixed w-full'>
+      <header className='fixed w-full top-0'>
         <div className='max-w-5xl mx-auto mobile:py-2 tablet:py-2 py-4 px-4'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center'>
@@ -69,13 +69,14 @@ const Navbar = () => {
                     {menu ? <TbX className='text-2xl' /> : null}
                   </div>
                 </div>
+
                 <li className='text-text cursor-pointer hover:text-accent font-light text-2xl'>
                   <Link
                     to='home'
                     spy={true}
                     smooth={true}
-                    offset={50}
                     duration={500}
+                    onClick={() => setMenu((prv) => !prv)}
                   >
                     Home
                   </Link>
@@ -85,8 +86,8 @@ const Navbar = () => {
                     to='fitur'
                     spy={true}
                     smooth={true}
-                    offset={50}
                     duration={500}
+                    onClick={() => setMenu((prv) => !prv)}
                   >
                     Fitur
                   </Link>

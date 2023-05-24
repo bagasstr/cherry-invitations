@@ -5,9 +5,9 @@ import md from '../assets/mudah-digunakan.png'
 
 const Fitur = () => {
   return (
-    <div id='fitur'>
-      <div className='w-full'>
-        <div className='max-w-5xl mx-auto mobile:py-14 desktop:py-36 desktop:px-2'>
+    <section id='fitur'>
+      <div className='w-full mobile:py-28 desktop:py-36'>
+        <div className='max-w-5xl mx-auto desktop:px-2'>
           <div className='mobile:text-center'>
             <div className='mb-4'>
               <h1 className='font-bold text-3xl desktop:text-4xl text-text'>
@@ -77,7 +77,7 @@ const Fitur = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

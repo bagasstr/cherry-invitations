@@ -7,7 +7,7 @@ import Link from 'next/link'
 const Hero = () => {
   return (
     <div className='w-full bg-bg' id='home'>
-      <div className='max-w-5xl mx-auto mobile:py-20 desktop:py-36 px-4'>
+      <div className='max-w-5xl mx-auto w-full h-full mobile:py-28 desktop:py-28 px-4'>
         <div className='mobile:text-center desktop:flex desktop:justify-between desktop:items-center'>
           <div className=''>
             <h1 className='text-3xl desktop:text-5xl font-bold text-text mb-4 mobile:flex mobile:flex-col mobile:justify-center'>
