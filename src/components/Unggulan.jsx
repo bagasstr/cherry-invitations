@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import md from 'public/assets/mudah-digunakan.png'
 
 const Unggulan = () => {
   return (
@@ -16,11 +15,9 @@ const Unggulan = () => {
             </div>
             <div className='mobile:mt-12 desktop:mt-20 desktop:flex desktop:justify-between desktop:items-center desktop:max-w-3xl desktop:mx-auto'>
               <div className='mobile:flex mobile:justify-center'>
-                <Image
-                  src={md}
-                  width={0}
-                  height={0}
-                  alt='md'
+                <img
+                  src='/assets/mudah-digunakan.png'
+                  alt=''
                   className='mobile:mb-8 w-52 desktop:w-72'
                 />
               </div>
@@ -36,12 +33,10 @@ const Unggulan = () => {
             </div>
             <div className='mobile:mt-12 desktop:mt-20 desktop:flex desktop:flex-row-reverse desktop:justify-between desktop:items-center desktop:max-w-3xl desktop:mx-auto'>
               <div className='mobile:flex mobile:justify-center'>
-                <Image
-                  src={md}
-                  width={0}
-                  height={0}
-                  alt='md'
-                  className='mobile:mb-8 w-52 desktop:w-72'
+                <img
+                  src='/assets/mudah-digunakan.png'
+                  alt=''
+                  className='mobile:mb-8 w-52 desktop:w-96'
                 />
               </div>
               <div className='desktop:mr-24'>
@@ -57,11 +52,9 @@ const Unggulan = () => {
             </div>
             <div className='mobile:mt-12 desktop:mt-20 desktop:flex desktop:justify-between desktop:items-center desktop:max-w-3xl desktop:mx-auto'>
               <div className='mobile:flex mobile:justify-center'>
-                <Image
-                  src={md}
-                  width={0}
-                  height={0}
-                  alt='md'
+                <img
+                  src='/assets/mudah-digunakan.png'
+                  alt=''
                   className='mobile:mb-8 w-52 desktop:w-72'
                 />
               </div>

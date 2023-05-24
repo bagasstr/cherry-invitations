@@ -1,6 +1,5 @@
 'use client'
 import Image from 'next/image'
-import md from '../assets/mudah-digunakan.png'
 import * as React from 'react'
 import { GiCoffeeCup } from 'react-icons/gi'
 import { MdFeaturedPlayList } from 'react-icons/md'

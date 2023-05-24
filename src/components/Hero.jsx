@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import hero from 'public/assets/hero.png'
 import Link from 'next/link'
 
 const Hero = () => {
@@ -28,17 +27,15 @@ const Hero = () => {
             </div>
           </div>
           <div className='mobile:flex mobile:justify-center'>
-            <Image
-              src={hero}
-              width={0}
-              height={0}
-              alt='hero-img'
+            <img
+              src='/assets/hero.png'
+              alt=''
               className='w-64 desktop:w-[600px]'
             />
           </div>
           <div className='desktop:hidden mobile:mt-8'>
             <Link
-              href={'/template'}
+              href={''}
               className='bg-accent text-bg px-4 py-3 rounded-full hover:bg-accent/95'
             >
               Buat Undangan

@@ -1,6 +1,5 @@
 'use client'
 import Image from 'next/image'
-import logo from 'public/logo.png'
 import React, { useState } from 'react'
 import { TbMenu, TbX } from 'react-icons/tb'
 import { Link } from 'react-scroll'
@@ -13,11 +12,9 @@ const Navbar = () => {
       <div className='max-w-5xl mx-auto mobile:py-2 tablet:py-2 py-4 px-4'>
         <div className='flex items-center justify-between'>
           <div className='flex items-center'>
-            <Image
-              src={logo}
-              width={0}
-              height={0}
-              alt='logo'
+            <img
+              src='/logo.png'
+              alt=''
               className='w-14 mobile:w-12 tablet:w-12 mr-4'
             />
             <h1 className='desktop:text-xl mobile:text-lg mobile:font-medium tablet:font-medium text-text mobile:leading-4 desktop:leading-5 desktop:font-semibold'>
@@ -44,12 +41,10 @@ const Navbar = () => {
             >
               <div className='flex justify-between items-center tablet:mb-8 desktop:hidden'>
                 <div className='flex items-center'>
-                  <Image
-                    src={logo}
-                    width={0}
-                    height={0}
-                    alt='logo'
-                    className='w-14 mobile:w-12 tablet:w-12 mr-2'
+                  <img
+                    src='/logo.png'
+                    alt=''
+                    className='w-14 mobile:w-12 tablet:w-12 mr-4'
                   />
                   <h1 className='desktop:text-xl mobile:text-lg mobile:font-medium tablet:font-medium text-text mobile:leading-4 desktop:leading-3 desktop:font-semibold'>
                     CHERRY
