@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import logo from '../assets/logo.png'
+import logo from 'public/logo.png'
 import React, { useState } from 'react'
 import { TbMenu, TbX } from 'react-icons/tb'
 import { Link } from 'react-scroll'
@@ -16,7 +16,6 @@ const Navbar = () => {
             <Image
               src={logo}
               width={0}
-              priority={logo}
               height={0}
               alt='logo'
               className='w-14 mobile:w-12 tablet:w-12 mr-4'
@@ -48,7 +47,6 @@ const Navbar = () => {
                   <Image
                     src={logo}
                     width={0}
-                    priority={logo}
                     height={0}
                     alt='logo'
                     className='w-14 mobile:w-12 tablet:w-12 mr-2'

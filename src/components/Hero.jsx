@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import hero from '@/assets/hero.png'
+import hero from 'public/assets/hero.png'
 import Link from 'next/link'
 
 const Hero = () => {

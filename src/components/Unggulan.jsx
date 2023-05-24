@@ -1,11 +1,11 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import md from '../assets/mudah-digunakan.png'
+import md from 'public/assets/mudah-digunakan.png'
 
 const Unggulan = () => {
   return (
-    <section id='fitur'>
+    <section>
       <div className='w-full mobile:py-28 desktop:py-36'>
         <div className='max-w-5xl mx-auto desktop:px-2'>
           <div className='mobile:text-center mobile:px-6'>
